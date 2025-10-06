@@ -185,7 +185,7 @@ window.onload = async () => {
       video.play();
 
       const interval = setInterval(() => {
-        const time = video.currentTime - 8.5 - (step * 60) / (120)*3; // 120 bpm moment but ill 3 quarters it (may be bad at math :shrug:) WAIT, i was supposed to triple it, not quarter it
+        const time = video.currentTime - 8.5 - (step * 60) / (120*3); // 120 bpm moment but ill 3 quarters it (may be bad at math :shrug:) WAIT, i was supposed to triple it, not quarter it
         // all it takes to make a different meme is to change the offset, bpm. thats it
         if (step >= memes.length) step = -Infinity;
         if (step < 0) return clearInterval(interval);

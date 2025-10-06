@@ -155,6 +155,7 @@ window.onload = async () => {
       push("OS", `${navigator.platform}`);
       push("Available Browser Memory", typeof window.performance.memory != "undefined" ? Math.round(window.performance.memory.jsHeapSizeLimit / 1024 / 1024) : null, "MB");
       push("CPU Threads", `${navigator.hardwareConcurrency}`);
+	  push("Thanks to: ", `My friend whom i wont name for privacy reasons, @rowan, and @harryrogers`);
       const canvas = document.createElement("canvas");
       let gl;
       let debugInfo;
